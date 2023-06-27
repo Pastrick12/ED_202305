@@ -1,12 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
-namespace Listas
+class EjemploDePila
 {
-    internal class Pilas2
+    static void Main()
     {
+        string texto;
+        Stack miPila = new Stack();
+        do
+        {
+            Console.Write("Introduce texto (o \"fin.\" para finalizar): ");
+            texto = Console.ReadLine();
+
+            if (texto != "fin.")
+                miPila.Push(texto);
+
+        } while (texto != "fin.");
+
+        while (miPila.Count > 0)
+            Console.WriteLine(miPila.Pop());
+
     }
 }
