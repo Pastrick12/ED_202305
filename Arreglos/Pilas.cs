@@ -28,7 +28,7 @@
                 throw new Exception("El arreglo esta lleno");
             }
             arreglo[tope] = dato;
-            tope++;
+            tope++; 
 
         }
 
